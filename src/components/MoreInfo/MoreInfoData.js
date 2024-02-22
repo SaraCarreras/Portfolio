@@ -1,4 +1,4 @@
-export const EXAMPLES_DATA = {
+export const MORE_INFO_DATA = {
   experience: {
     title: "Experience",
     content: [
@@ -17,7 +17,7 @@ export const EXAMPLES_DATA = {
     ],
   },
 
-  languages: {
+  techStack: {
     title: "Tech Stack",
     content: [
       { name: "JavaScript", image: "" },
@@ -62,7 +62,7 @@ export const EXAMPLES_DATA = {
       },
     ],
   },
-  contact: {
+  contactMe: {
     title: "Contact me!",
     content: [
       { email: "saracc621@gmail.com" },

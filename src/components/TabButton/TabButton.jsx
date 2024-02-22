@@ -1,4 +1,4 @@
-import "../../index.css";
+import "@/index.scss";
 export function TabButton({ children, isSelected, ...props }) {
   return (
     <li>

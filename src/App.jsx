@@ -1,4 +1,4 @@
-import { Examples } from "./components/Examples/Examples";
+import { MoreInfo } from "./components/MoreInfo/MoreInfo";
 import { Header } from "./components/Header/Header";
 import { Projects } from "./components/Projects/Projects";
 
@@ -8,7 +8,7 @@ function App() {
       <Header />
       <main>
         <Projects />
-        <Examples />
+        <MoreInfo />
       </main>
     </div>
   );
