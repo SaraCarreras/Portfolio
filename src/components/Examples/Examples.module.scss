@@ -1,0 +1,13 @@
+.position {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  & .company {
+    color:rgb(231, 148, 250);
+  }
+
+  & .date {
+    font-size: 0.8rem;
+  }
+}
