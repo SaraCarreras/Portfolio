@@ -8,13 +8,13 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/styles/variables.scss";`, // Adjust the path to match your project structure
+        additionalData: `@import "@/styles/variables.scss";`, 
       },
     },
   },
   resolve: {
     alias: {
-      "@": resolve(__dirname, "src"), // Set up an alias for the src directory
+      "@": resolve(__dirname, "src"), 
     },
   },
 });
