@@ -19,22 +19,20 @@ import { iMoreInfoData } from "./interfaces/iMoreInfoData";
 
 export function MoreInfo() {
     const [selectedSection, setSelectedSection] =
-        useState<SectionKey>("experience");
+        useState<keyof iMoreInfoData>("experience");
 
     function handleSelect(arg: SectionKey) {
         setSelectedSection(arg);
     }
 
-    type SectionKey = keyof ComponentMapper;
+    type SectionKey = keyof iMoreInfoData;
 
-    type ComponentMapper = {
-        experience: React.ComponentType<{ data: iExperience }>;
-        techStack: React.ComponentType<{ data: iTechStack }>;
-        education: React.ComponentType<{ data: iEducation }>;
-        contactMe: React.ComponentType<{ data: iContactMe }>;
-    };
+   
 
-    const componentMapper: ComponentMapper = {
+    const componentMapper: Record<
+        keyof iMoreInfoData,
+        React.ComponentType<any>
+    > = {
         experience: Experience,
         techStack: TechStack,
         education: Education,
@@ -43,9 +41,7 @@ export function MoreInfo() {
 
     let ExamplesSection = componentMapper[selectedSection];
 
-    
 
-    console.log(MORE_INFO_DATA[selectedSection]);
     return (
         <Section id="examples" title="More Info">
             <Tab
@@ -65,16 +61,7 @@ export function MoreInfo() {
                 }
             >
                 <div id="tab-content">
-                    {
-                        <ExamplesSection
-                            data={
-                                MORE_INFO_DATA[selectedSection] as iExperience &
-                                    iTechStack &
-                                    iEducation &
-                                    iContactMe
-                            }
-                        />
-                    }
+                    {<ExamplesSection data={MORE_INFO_DATA[selectedSection]} />}
                 </div>
             </Tab>
         </Section>
