@@ -4,10 +4,10 @@ import { MORE_INFO_DATA } from "./MoreInfoData";
 import { Section } from "../Section/Section";
 import { Tab } from "../Tab/Tab";
 import styles from "./MoreInfo.module.scss";
-import { Experience } from "./MoreInfoSections/Experience.jsx";
-import { TechStack } from "./MoreInfoSections/TechStack.jsx";
-import { Education } from "./MoreInfoSections/Education.jsx";
-import { ContactMe } from "./MoreInfoSections/ContactMe.jsx";
+import { Experience } from "./MoreInfoSections/Experience";
+import { TechStack } from "./MoreInfoSections/TechStack";
+import { Education } from "./MoreInfoSections/Education";
+import { ContactMe } from "./MoreInfoSections/ContactMe";
 
 export function MoreInfo() {
     const [selectedSection, setSelectedSection] = useState("experience");
@@ -25,29 +25,6 @@ export function MoreInfo() {
 
     let ExamplesSection = componentMapper[selectedSection];
 
-    // if (selectedSection) {
-    //   examplesSection = (
-    //     <div id="tab-content">
-    //       {}
-    //       <h3>{MORE_INFO_DATA[selectedSection]?.title}</h3>
-    //       <span className={styles.position}>
-    //         <h5 className={styles.company}>
-    //           {MORE_INFO_DATA[selectedSection]?.company}
-    //         </h5>
-    //         <p className={styles.date}>{MORE_INFO_DATA[selectedSection]?.date}</p>
-    //       </span>
-
-    //       <p>
-    //         {MORE_INFO_DATA[selectedSection]?.content.map((el) =>
-    //           console.log(el)
-    //         )}
-    //       </p>
-    //       <pre>
-    //         <code>{MORE_INFO_DATA[selectedSection]?.code}</code>
-    //       </pre>
-    //     </div>
-    //   );
-    // }
     return (
         <Section id="examples" title="More Info">
             <Tab
