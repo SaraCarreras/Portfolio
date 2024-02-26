@@ -8,39 +8,27 @@ import { Experience } from "./MoreInfoSections/Experience";
 import { TechStack } from "./MoreInfoSections/TechStack";
 import { Education } from "./MoreInfoSections/Education";
 import { ContactMe } from "./MoreInfoSections/ContactMe";
-import { SelectedComponentType } from "./types/MoreInfoComponentType";
-import {
-    iContactMe,
-    iEducation,
-    iExperience,
-    iTechStack,
-} from "./interfaces/iMoreInfoData";
 import { iMoreInfoData } from "./interfaces/iMoreInfoData";
+import { ComponentMapper, SectionKey, SelectedComponentType } from "./types/MoreInfoComponentType";
 
 export function MoreInfo() {
     const [selectedSection, setSelectedSection] =
-        useState<keyof iMoreInfoData>("experience");
+        useState<SectionKey>("experience");
 
     function handleSelect(arg: SectionKey) {
         setSelectedSection(arg);
     }
 
-    type SectionKey = keyof iMoreInfoData;
-
-   
-
-    const componentMapper: Record<
-        keyof iMoreInfoData,
-        React.ComponentType<any>
-    > = {
+    const componentMapper: ComponentMapper = {
         experience: Experience,
         techStack: TechStack,
         education: Education,
         contactMe: ContactMe,
     };
 
-    let ExamplesSection = componentMapper[selectedSection];
-
+    let ExamplesSection = componentMapper[
+        selectedSection
+    ] as SelectedComponentType<iMoreInfoData[keyof iMoreInfoData]>;
 
     return (
         <Section id="examples" title="More Info">
@@ -61,7 +49,15 @@ export function MoreInfo() {
                 }
             >
                 <div id="tab-content">
-                    {<ExamplesSection data={MORE_INFO_DATA[selectedSection]} />}
+                    {
+                        <ExamplesSection
+                            data={
+                                MORE_INFO_DATA[
+                                    selectedSection 
+                                ]
+                            }
+                        />
+                    }
                 </div>
             </Tab>
         </Section>

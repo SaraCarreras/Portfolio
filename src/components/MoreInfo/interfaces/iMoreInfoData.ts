@@ -1,3 +1,9 @@
+export interface iMoreInfoData {
+    experience: iExperience;
+    techStack: iTechStack;
+    education: iEducation;
+    contactMe: iContactMe;
+}
 export interface iExperience {
     title: string;
     content: iCompany[];
@@ -33,11 +39,4 @@ export interface iEducationItem {
 export interface iContactMe {
     title: string;
     content: { [key: string]: string }[];
-}
-
-export interface iMoreInfoData {
-    experience: iExperience;
-    techStack: iTechStack;
-    education: iEducation;
-    contactMe: iContactMe;
 }
