@@ -1,10 +1,6 @@
 import styles from "../MoreInfo.module.scss";
 import { iExperience } from "../interfaces/iMoreInfoData";
 
-type ExperienceProps = {
-    data: iExperience;
-};
-
 export function Experience({ data }: { data: iExperience }) {
     return (
         <>
@@ -18,8 +14,6 @@ export function Experience({ data }: { data: iExperience }) {
                     <p>{el.description}</p>
                 </>
             ))}
-
-            {/* <p>{data?.content.map((el) => console.log(el))}</p> */}
         </>
     );
 }
