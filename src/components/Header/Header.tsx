@@ -7,7 +7,8 @@ export function Header() {
             <img className={styles.photo} src={photoSara} alt="Sara Carreras" />
             <h1 className={styles.completeName}>Sara Carreras</h1>
             <p className={styles.shortSentence}>
-                Frontend Developer you will need for (almost) any app!
+                Frontend Developer you will need for{" "}
+                <span className={styles.linethrough}>almost</span> any app!
             </p>
         </header>
     );
