@@ -9,7 +9,11 @@ import { TechStack } from "./MoreInfoSections/TechStack";
 import { Education } from "./MoreInfoSections/Education";
 import { ContactMe } from "./MoreInfoSections/ContactMe";
 import { iMoreInfoData } from "./interfaces/iMoreInfoData";
-import { ComponentMapper, SectionKey, SelectedComponentType } from "./types/MoreInfoComponentType";
+import {
+    ComponentMapper,
+    SectionKey,
+    SelectedComponentType,
+} from "./types/MoreInfoComponentType";
 
 export function MoreInfo() {
     const [selectedSection, setSelectedSection] =
@@ -34,7 +38,6 @@ export function MoreInfo() {
         ] as SelectedComponentType<iMoreInfoData[keyof iMoreInfoData]>;
     }
 
-
     return (
         <Section id="examples" title="More Info">
             <Tab
@@ -54,7 +57,13 @@ export function MoreInfo() {
                 }
             >
                 <div id="tab-content">
-                    { ExamplesSection && <ExamplesSection data={MORE_INFO_DATA[selectedSection]} />}
+                    {ExamplesSection ? (
+                        <ExamplesSection
+                            data={MORE_INFO_DATA[selectedSection]}
+                        />
+                    ) : (
+                        <p>Click a button! ⬆️</p>
+                    )}
                 </div>
             </Tab>
         </Section>
