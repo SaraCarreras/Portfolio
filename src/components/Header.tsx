@@ -1,9 +1,8 @@
 import photoSara from "@/assets/photo-cv-optimized.webp";
 import { Badge } from "./Badge";
-import contact from "@/icons/contact.png";
 import social from "@/icons/social.png";
-import github from "@/icons/github.svg";
-import linkedinM from "@/icons/linkedinM.svg";
+import { SvgGithub } from "@/icons/SvgGithub";
+import linkedin from "@/icons/linkedin.svg";
 
 export function Header() {
   return (
@@ -26,18 +25,14 @@ export function Header() {
       <ul>
         <li>
           <a href="mailto:saracc621@gmail.com">
-            LinkedinM
-            <img
-              alt="email"
-              src={linkedinM}
-              className="w-8 h-8 dark:stroke-cyan-500"
-            />
+            Linkedin
+            <img alt="email" src={linkedin} className="w-8 h-8" />
           </a>
           <a href="https://www.linkedin.com/in/saracarreras-frontend-developer">
             <img alt="linkedin" src={social} className="w-8 h-8" />
           </a>
           <a href="https://www.linkedin.com/in/saracarreras-frontend-developer">
-            Github <img alt="linkedin" src={github} className="w-8 h-8" />
+            Github <SvgGithub size={{ width: 30, height: 30 }} />
           </a>
         </li>
       </ul>
