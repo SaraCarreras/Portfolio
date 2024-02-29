@@ -1,7 +1,7 @@
 export function NavBar() {
   return (
-    <nav>
-      <ul className="flex flex-row gap-x-10">
+    <nav className="flex justify-center items-center w-[1120px] py-5 mx-auto">
+      <ul className="flex flex-row gap-x-10 self-end">
         <li>
           <a href="/">Home</a>
         </li>

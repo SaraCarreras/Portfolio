@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light dark;
+  color-scheme: dark;
+  /* apply light */
 }
 
 html {
@@ -12,6 +13,7 @@ html {
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /*align-items: center;*/
   min-height: 100vh;
 }

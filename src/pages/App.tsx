@@ -5,11 +5,12 @@ import "@fontsource/open-sans";
 
 function App() {
   return (
-    <div className="">
+    <>
       <NavBar />
-      <Header />
-      <main></main>
-    </div>
+      <main>
+        <Header />
+      </main>
+    </>
   );
 }
 
