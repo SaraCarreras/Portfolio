@@ -1,3 +1,6 @@
+import { SvgDarkMode } from "icons/SvgDarkMode";
+import { SvgLightMode } from "icons/SvgLightMode";
+
 export function NavBar() {
   return (
     <nav className="flex justify-center items-center w-[1120px] py-5 mx-auto">
@@ -13,6 +16,10 @@ export function NavBar() {
         </li>
         <li>
           <a href="/contact">Contact</a>
+        </li>
+        <li>
+          <SvgDarkMode />
+          <SvgLightMode />
         </li>
       </ul>
     </nav>

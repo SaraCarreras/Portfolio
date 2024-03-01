@@ -1,8 +1,6 @@
-interface iProp {
-  size: { width: number; height: number };
-}
+import { iSizeProp } from "interfaces/sizeProp";
 
-export function SvgGithub({ size }: iProp) {
+export function SvgGithub({ size }: iSizeProp) {
   const { width, height } = size;
   return (
     <svg

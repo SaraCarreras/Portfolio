@@ -1,8 +1,13 @@
 import photoSara from "@/assets/photo-cv-optimized.webp";
 import { Badge } from "./Badge";
-import social from "@/icons/social.png";
-import { SvgGithub } from "@/icons/SvgGithub";
-import linkedin from "@/icons/linkedin.svg";
+import { SvgGithub } from "../icons/SvgGithub";
+import { SvgLinkedin } from "icons/linkedin";
+import { SvgDarkMode } from "icons/SvgDarkMode";
+import { SvgLightMode } from "icons/SvgLightMode";
+import { SvgPreview } from "icons/SvgPrevie";
+import { SvgEmail } from "icons/SvgEmail";
+import { SvgContact } from "icons/SvgContact";
+import { BaseButton } from "./BaseButton";
 
 export function Header() {
   return (
@@ -23,17 +28,24 @@ export function Header() {
         <span className="line-through">almost</span> any app!
       </h2>
       <ul>
-        <li>
-          <a href="mailto:saracc621@gmail.com">
-            Linkedin
-            <img alt="email" src={linkedin} className="w-8 h-8" />
-          </a>
-          <a href="https://www.linkedin.com/in/saracarreras-frontend-developer">
-            <img alt="linkedin" src={social} className="w-8 h-8" />
-          </a>
-          <a href="https://www.linkedin.com/in/saracarreras-frontend-developer">
-            Github <SvgGithub size={{ width: 30, height: 30 }} />
-          </a>
+        <li className="flex gap-3 py-4">
+          <BaseButton
+            text="saracc621@gmail.com"
+            href="mailto:saracc621@gmail.com"
+          >
+            <SvgEmail />
+          </BaseButton>
+
+          <BaseButton
+            text="Linkedin"
+            href="https://www.linkedin.com/in/saracarreras-frontend-developer"
+          >
+            <SvgLinkedin size={{ width: 20, height: 20 }} />
+          </BaseButton>
+
+          <BaseButton href="https://github.com/SaraCarreras" text="Github">
+            <SvgGithub size={{ width: 30, height: 30 }} />{" "}
+          </BaseButton>
         </li>
       </ul>
     </section>
