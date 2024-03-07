@@ -21,7 +21,7 @@ export function NavBar() {
     <nav className="flex justify-center items-center w-[1120px] py-5 mx-auto">
       <ul className="flex flex-row gap-x-10 self-end">
         <li>
-          <a href="#top">Home</a>
+          <a href="#header">Header</a>
         </li>
         <li>
           <a href="#experience">Experience</a>

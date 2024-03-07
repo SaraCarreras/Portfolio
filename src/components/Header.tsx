@@ -8,11 +8,11 @@ import { SvgPreview } from "@/icons/SvgPrevie";
 import { SvgEmail } from "@/icons/SvgEmail";
 import { SvgContact } from "@/icons/SvgContact";
 import { BaseButton } from "./BaseButton";
-import { SectionContainer } from "./SectionContiainer";
+import { SectionContainer } from "./SectionContainer";
 
 export function Header() {
   return (
-    <SectionContainer>
+    <SectionContainer id="header">
       <div className="flex direction-row items-center gap-5">
         <img
           src={photoSara}
