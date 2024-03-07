@@ -1,17 +1,18 @@
 import photoSara from "@/assets/photo-cv-optimized.webp";
-import { Badge } from "./Badge";
-import { SvgGithub } from "../icons/SvgGithub";
-import { SvgLinkedin } from "icons/linkedin";
-import { SvgDarkMode } from "icons/SvgDarkMode";
-import { SvgLightMode } from "icons/SvgLightMode";
-import { SvgPreview } from "icons/SvgPrevie";
-import { SvgEmail } from "icons/SvgEmail";
-import { SvgContact } from "icons/SvgContact";
+import { Badge } from "@/components/Badge";
+import { SvgGithub } from "@/icons/SvgGithub";
+import { SvgLinkedin } from "@/icons/linkedin";
+import { SvgDarkMode } from "@/icons/SvgDarkMode";
+import { SvgLightMode } from "@/icons/SvgLightMode";
+import { SvgPreview } from "@/icons/SvgPrevie";
+import { SvgEmail } from "@/icons/SvgEmail";
+import { SvgContact } from "@/icons/SvgContact";
 import { BaseButton } from "./BaseButton";
+import { SectionContainer } from "./SectionContiainer";
 
 export function Header() {
   return (
-    <section className="justify-center items-center py-20 w-full mx-auto lg:w-[740px] tracking-normal">
+    <SectionContainer>
       <div className="flex direction-row items-center gap-5">
         <img
           src={photoSara}
@@ -20,15 +21,13 @@ export function Header() {
         />
         <Badge>Coding 👩🏻‍💻</Badge>
       </div>
-
       <h1 className="flex text-5xl font-bold gap-x-4 py-4">Hi👋🏼 I'm Sara</h1>
-
       <h2 className="text-2xl text-[#c792ff]">
         Frontend developer you'll need for{" "}
         <span className="line-through">almost</span> any app!
       </h2>
       <ul>
-        <li className="flex gap-3 py-4">
+        <li className="flex gap-3 py-5">
           <BaseButton
             text="saracc621@gmail.com"
             href="mailto:saracc621@gmail.com"
@@ -48,6 +47,6 @@ export function Header() {
           </BaseButton>
         </li>
       </ul>
-    </section>
+    </SectionContainer>
   );
 }
