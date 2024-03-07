@@ -16,10 +16,10 @@ export function NavBar() {
   function changeMode() {
     themeMode === "dark" ? setThemeMode("light") : setThemeMode("dark");
   }
-
+  //sm:w-[740px]
   return (
-    <nav className="flex justify-center items-center w-[1120px] py-5 mx-auto">
-      <ul className="flex flex-row gap-x-10 self-end">
+    <nav className="flex justify-center items-center py-5 mx-auto  ">
+      <ul className="flex flex-row gap-x-5 self-end text-sm sm:gap-x-10">
         <li>
           <a href="#header">Header</a>
         </li>

@@ -10,7 +10,7 @@ export function SectionContainer({
   return (
     <section
       id={id}
-      className="justify-center items-center py-20 w-full mx-auto lg:w-[740px] tracking-normal"
+      className="justify-center items-center py-20 mx-auto w-full tracking-normal md:w-[740px]  "
     >
       {children}
     </section>
