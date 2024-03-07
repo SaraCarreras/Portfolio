@@ -4,7 +4,7 @@ import { SectionContainer } from "./SectionContiainer";
 
 export function Experience() {
   return (
-    <SectionContainer>
+    <SectionContainer id="experience">
       <h2 className="text-2xl bold pb-8">Experience</h2>
       <ol className="relative border-s border-purple-200 dark:border-purple-700">
         {EXPERIENCE_DATA.map((item, index) => {
