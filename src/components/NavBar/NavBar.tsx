@@ -19,7 +19,7 @@ export function NavBar() {
   //sm:w-[740px]
   return (
     <nav className="flex justify-center items-center py-5 mx-auto  ">
-      <ul className="flex flex-row gap-x-5 self-end text-sm sm:gap-x-10">
+      <ul className="flex flex-row gap-x-5 self-end text-sm sm:text-lg sm:gap-x-10">
         <li>
           <a href="#header">Header</a>
         </li>

@@ -1,13 +1,9 @@
-import { iSizeProp } from "@/types/types";
-
-export function SvgGithub({ size }: iSizeProp) {
-  const { width, height } = size;
+export function SvgGithub() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={height}
       viewBox="0 0 48 48"
+      className="w-5 h-5 sm:w-6 sm:h-6"
     >
       <path
         fill="currentColor"

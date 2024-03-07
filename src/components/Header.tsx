@@ -1,12 +1,8 @@
 import photoSara from "@/assets/photo-cv-optimized.webp";
 import { Badge } from "@/components/Badge";
 import { SvgGithub } from "@/icons/SvgGithub";
-import { SvgLinkedin } from "@/icons/linkedin";
-import { SvgDarkMode } from "@/icons/SvgDarkMode";
-import { SvgLightMode } from "@/icons/SvgLightMode";
-import { SvgPreview } from "@/icons/SvgPrevie";
+import { SvgLinkedin } from "@/icons/SvgLinkedin";
 import { SvgEmail } from "@/icons/SvgEmail";
-import { SvgContact } from "@/icons/SvgContact";
 import { BaseButton } from "./BaseButton";
 import { SectionContainer } from "./SectionContainer";
 
@@ -21,13 +17,15 @@ export function Header() {
         />
         <Badge>Coding 👩🏻‍💻</Badge>
       </div>
-      <h1 className="flex text-5xl font-bold gap-x-4 py-4">Hi👋🏼 I'm Sara</h1>
-      <h2 className="text-2xl text-[#c792ff]">
+      <h1 className="flex text-3xl sm:text-5xl font-bold gap-x-4 py-4">
+        Hi👋🏼 I'm Sara
+      </h1>
+      <h2 className="  text-[#c792ff] sm:text-2xl">
         Frontend developer you'll need for{" "}
         <span className="line-through">almost</span> any app!
       </h2>
       <ul>
-        <li className="flex gap-3 py-5">
+        <li className="flex gap-3 py-5 flex-wrap">
           <BaseButton
             text="saracc621@gmail.com"
             href="mailto:saracc621@gmail.com"
@@ -39,11 +37,11 @@ export function Header() {
             text="Linkedin"
             href="https://www.linkedin.com/in/saracarreras-frontend-developer"
           >
-            <SvgLinkedin size={{ width: 20, height: 20 }} />
+            <SvgLinkedin />
           </BaseButton>
 
           <BaseButton href="https://github.com/SaraCarreras" text="Github">
-            <SvgGithub size={{ width: 30, height: 30 }} />{" "}
+            <SvgGithub />
           </BaseButton>
         </li>
       </ul>
