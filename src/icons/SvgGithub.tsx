@@ -1,4 +1,4 @@
-import { iSizeProp } from "interfaces/sizeProp";
+import { iSizeProp } from "@/types/types";
 
 export function SvgGithub({ size }: iSizeProp) {
   const { width, height } = size;
