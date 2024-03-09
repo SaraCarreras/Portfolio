@@ -1,12 +1,12 @@
 import { SvgCalendar } from "@/icons/SvgCalendar";
-import { experienceItem } from "@/types/types";
+import { iExperienceItem } from "@/types/types";
 
 export function ExperienceItem({
   company,
   date,
   description,
   latest,
-}: experienceItem) {
+}: iExperienceItem) {
   return (
     <>
       <span className="absolute flex items-center justify-center size-6 bg-purple-300 rounded-full -start-3 ring-8 ring-purple dark:ring-purple-900 dark:bg-purple-900">
