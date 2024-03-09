@@ -6,7 +6,7 @@ export function SvgEmail() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-5 h-5 sm:w-6 sm:h-6"
+      className="w-4 h-4 sm:w-6 sm:h-6"
     >
       <path
         strokeLinecap="round"
