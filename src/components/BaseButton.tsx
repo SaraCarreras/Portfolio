@@ -17,7 +17,7 @@ export function BaseButton({
         rel="noreferrer"
         className="flex justify-center items-center flex-row gap-3"
       >
-        <span>{children}</span>{" "}
+        <span>{children}</span>
         <span className="text-sm sm:text-md"> {text}</span>
       </a>
     </button>
