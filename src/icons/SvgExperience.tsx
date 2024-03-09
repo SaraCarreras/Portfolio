@@ -6,7 +6,7 @@ export function SvgExperience() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-8 h-8"
+      className="w-6 h-6 sm:w-8 sm:h-8"
     >
       <path
         strokeLinecap="round"

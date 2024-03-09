@@ -1,6 +1,6 @@
-import { experienceItem } from "types/types";
+import { iExperienceItem } from "@/types/types";
 
-export const EXPERIENCE_DATA: experienceItem[] = [
+export const EXPERIENCE_DATA: iExperienceItem[] = [
   {
     company: "Frontend Developer at Cloudman",
     date: "Nov 2022 - Currently",
