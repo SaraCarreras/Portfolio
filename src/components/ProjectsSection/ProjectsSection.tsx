@@ -6,7 +6,7 @@ import { PROJECTS_DATA } from "@/constants/ProjectsData";
 export function ProjectsSection() {
   return (
     <SectionContainer id="projects">
-      <h2 className="text-2xl bold pb-8 flex gap-x-2 items-center">
+      <h2 className="text-3xl font-semibold pb-8 flex gap-x-2 items-center">
         <SvgCode />
         Projects
       </h2>

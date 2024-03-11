@@ -6,7 +6,7 @@ import { SvgExperience } from "@/icons/SvgExperience";
 export function Experience() {
   return (
     <SectionContainer id="experience">
-      <h2 className="text-2xl bold pb-8 flex gap-x-2 items-center">
+      <h2 className="text-3xl font-semibold pb-8 flex gap-x-2 items-center">
         <SvgExperience />
         Experience
       </h2>

@@ -9,8 +9,8 @@ export function ProjectItem({
 }: iProjectItem) {
   return (
     <article>
-      <h3 className="text-2xl font-semibold  text-purple-500 mb-2">{title}</h3>
-      <p className="text-lg mb-2 text-pretty">{description}</p>
+      <h3 className="text-2xl font-semibold  text-purple-500 mb-4">{title}</h3>
+      <p className="text-lg mb-4 text-pretty">{description}</p>
       <a href={preview}>View</a>
       <a href={github}>Github</a>
 
@@ -19,7 +19,7 @@ export function ProjectItem({
           return (
             <li key={el.name}>
               <span
-                className={`flex gap-x-2 rounded-full items-center text-sm  ${el.class} py-1 px-4 `}
+                className={`flex gap-x-2 rounded-full items-center text-md  ${el.class} py-1 px-4 `}
               >
                 <el.icon />
 
