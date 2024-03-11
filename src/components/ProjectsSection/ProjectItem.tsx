@@ -14,12 +14,12 @@ export function ProjectItem({
       <a href={preview}>View</a>
       <a href={github}>Github</a>
 
-      <ul className="flex gap-x-4 flew-row">
+      <ul className="flex gap-4 flew-row flex-wrap m-4">
         {technology?.map((el) => {
           return (
             <li key={el.name}>
               <span
-                className={`flex gap-x-2 rounded-full items-center text-md  ${el.class} py-1 px-4 `}
+                className={`flex gap-x-2 rounded-full items-center text-md   ${el.class} py-1 px-4 `}
               >
                 <el.icon />
 

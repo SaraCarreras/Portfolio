@@ -1,3 +1,4 @@
+import { AboutSection } from "@/components/AboutSection/AboutSection";
 import { Experience } from "@/components/ExperienceSection/ExperienceSection";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -15,6 +16,7 @@ function App() {
         <Header />
         <Experience />
         <ProjectsSection />
+        <AboutSection />
       </main>
       <Footer />
     </>

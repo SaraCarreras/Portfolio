@@ -21,10 +21,10 @@ export function ExperienceItem({
             </span>
           )}
         </h3>
-        <time className="block my-4 text-sm font-normal leading-none  text-blue-200 text-pretty dark:text-gray-500">
+        <time className="block my-4 text-md font-normal leading-none  text-blue-200 text-pretty dark:text-gray-500">
           {date}
         </time>
-        <p className="mb-4 text-base font-normal text-gray-300 text-pretty dark:text-gray-400">
+        <p className="mb-4  text-lg text-gray-300 text-pretty dark:text-gray-400">
           {description}
         </p>
       </div>
