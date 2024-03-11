@@ -2,8 +2,8 @@ export function SvgTypeScript() {
   return (
     <svg
       viewBox="0 0 256 256"
-      width="256"
-      height="256"
+      width="30"
+      height="30"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"
     >

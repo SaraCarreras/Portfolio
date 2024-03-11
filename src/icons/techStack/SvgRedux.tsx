@@ -1,8 +1,8 @@
 export function SvgRedux() {
   return (
     <svg
-      width="800px"
-      height="800px"
+      width="30"
+      height="30"
       viewBox="0 -6 256 256"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"

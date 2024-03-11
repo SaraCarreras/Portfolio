@@ -2,8 +2,8 @@ export function SvgFirebase() {
   return (
     <svg
       viewBox="0 0 256 351"
-      width="256"
-      height="351"
+      width="25"
+      height="30"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"
     >
