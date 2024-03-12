@@ -34,25 +34,38 @@ export function NavBar() {
 
   //sm:w-[740px]
   return (
-    <nav className="flex p-3 mx-auto sticky dark:bg-white/50 w-fit top-0 z-10 border rounded-full border-black bg-black/10 backdrop-blur-2xl ">
-      <ul className="flex flex-row gap-x-5  items-center self-end text-sm sm:text-lg sm:gap-x-10 ">
-        <li className=" hover:bg-white/10 rounded-full px-3 py-1 ">
-          <a href="#header">Header</a>
+    <nav className="flex mx-auto sticky dark:bg-white/60 w-fit top-0 z-10 border rounded-full border-black bg-purple-400/10 backdrop-blur-2xl ">
+      <ul className="flex flex-row items-center self-end font-bold sm:text-lg sm:gap-x-5 ">
+        <li>
+          <a className=" hover:text-purple-600 pl-5" href="#header">
+            Header
+          </a>
         </li>
-        <li className=" hover:bg-white/10 rounded-full px-3 py-1">
-          <a href="#experience">Experience</a>
+        <li>
+          <a className=" hover:text-purple-600 px-2" href="#experience">
+            Experience
+          </a>
         </li>
-        <li className=" hover:bg-white/10 rounded-full px-3 py-1">
-          <a href="#about">About</a>
+        <li>
+          <a className=" hover:text-purple-600 px-2" href="#about">
+            About
+          </a>
         </li>
-        <li className=" hover:bg-white/10 rounded-full px-3 py-1">
-          <a href="#projects">Projects</a>
+        <li>
+          <a className=" hover:text-purple-600 px-2" href="#projects">
+            Projects
+          </a>
         </li>
-        <li className=" hover:bg-white/10 rounded-full px-3 py-1">
-          <a href="#contact">Contact</a>
+        <li>
+          <a className=" hover:text-purple-600 px-2" href="#contact">
+            Contact
+          </a>
         </li>
-        <li className=" hover:bg-white/10 rounded-full px-2  items-center">
-          <button className="mt-2  items-center" onClick={handleChangeTheme}>
+        <li>
+          <button
+            className="mt-2  hover:text-purple-600 pr-4 "
+            onClick={handleChangeTheme}
+          >
             {SvgComponente}
           </button>
         </li>
