@@ -24,10 +24,10 @@ export function ExperienceItem({
             </span>
           )}
         </h3>
-        <time className="block my-4 text-md font-normal leading-none text-blue-500 text-pretty dark:text-gray-500">
+        <time className="block my-4 text-md font-normal leading-none text-blue-500 text-pretty dark:text-white/70">
           {date}
         </time>
-        <p className="mb-4  text-lg text-gray-600 text-pretty dark:text-gray-400">
+        <p className="mb-4  text-lg text-gray-600 text-pretty dark:text-gray-300">
           {description}
         </p>
       </div>

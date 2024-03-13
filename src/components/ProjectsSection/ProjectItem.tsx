@@ -1,4 +1,7 @@
 import { iProjectItem } from "@/types/types";
+import { LinkButton } from "../LinkButton";
+import { SvgPreview } from "@/icons/SvgPreview";
+import { SvgGithub } from "@/icons/SvgGithub";
 export function ProjectItem({
   title,
   description,
@@ -9,12 +12,12 @@ export function ProjectItem({
 }: iProjectItem) {
   return (
     <article>
-      <h3 className="text-2xl font-semibold  text-purple-500 mb-4">{title}</h3>
-      <p className="text-lg mb-4 text-pretty">{description}</p>
-      <a href={preview}>View</a>
-      <a href={github}>Github</a>
+      <h3 className="text-2xl font-semibold  text-purple-500 mt-6 mb-4 ">
+        {title}
+      </h3>
+      <p className="text-lg text-pretty">{description}</p>
 
-      <ul className="flex gap-4 flew-row flex-wrap m-4">
+      <ul className="flex gap-4 flew-row flex-wrap my-4 ">
         {technology?.map((el) => {
           return (
             <li key={el.name}>
@@ -34,6 +37,14 @@ export function ProjectItem({
         src={image}
         alt="project's screenshot"
       />
+      <span className="flex gap-3 mt-4 ">
+        <LinkButton href={preview}>
+          <SvgPreview /> View
+        </LinkButton>
+        <LinkButton href={github}>
+          <SvgGithub /> Github
+        </LinkButton>
+      </span>
     </article>
   );
 }

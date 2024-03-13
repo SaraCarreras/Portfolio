@@ -8,24 +8,31 @@ export function AboutSection() {
         <SvgAbout />
         About me
       </h2>
-      <article className="text-lg [&>p]:mb-4">
+      <article className="text-lg [&>p]:mb-4 [&>p>strong]:font-semibold">
         <p className="text-pretty">
           Hello, I'm Sara, I'm a web developer from Barcelona. I studied
           Psychology and after a few years I switched to the world of
-          programming. Since then I enjoy{" "}
-          <span className=" text-[#c792ff]">creating web experiences.</span>
+          programming. Since then I enjoy
+          <strong className=" text-[#ae63ff] dark:text-[#c792ff]">
+            {" "}
+            creating web experiences.
+          </strong>
         </p>
         <p className="text-pretty">
           In addition to actively participating in the dev community, I like to
-          <span className=" text-[#c792ff]">
+          <strong className=" text-[#ae63ff] dark:text-[#c792ff]">
+            {" "}
             collaborate with my peers to create better user experiences.
-          </span>
+          </strong>
           Bringing together my two passions, people and technology 🚀.
         </p>
         <p className="text-pretty">
           In my free time, I enjoy working on my own projects, tackling coding
-          challenges, and practicing with the{" "}
-          <span className=" text-[#c792ff]">newest technologies.</span>
+          challenges, and practicing with the
+          <strong className=" text-[#ae63ff] dark:text-[#c792ff]">
+            {" "}
+            newest technologies.
+          </strong>
         </p>
       </article>
     </SectionContainer>

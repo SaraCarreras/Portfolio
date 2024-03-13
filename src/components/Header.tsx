@@ -1,5 +1,4 @@
 import photoSara from "@/assets/photo-cv-optimized.webp";
-import { Badge } from "@/components/Badge";
 import { SvgGithub } from "@/icons/SvgGithub";
 import { SvgLinkedin } from "@/icons/SvgLinkedin";
 import { SvgEmail } from "@/icons/SvgEmail";
@@ -14,13 +13,12 @@ export function Header() {
       <div className="flex direction-row items-center gap-7">
         <img
           src={photoSara}
-          alt="Sara's face"
+          alt="Sara's avatar"
           className="rounded-full w-24 h-24 object-cover"
         />
-        {/* <Badge>Coding 👩🏻‍💻</Badge> */}
         <HeroButton href={cv}>Download Cv</HeroButton>
       </div>
-      <h1 className="flex text-3xl sm:text-5xl font-bold gap-x-4 py-4">
+      <h1 className="flex text-3xl sm:text-5xl font-bold gap-x-4 py-4 dark:text-gray-300">
         Hi👋🏼 I'm Sara
       </h1>
       <h2 className="  text-[#c792ff] sm:text-2xl">
@@ -28,7 +26,7 @@ export function Header() {
         <span className="line-through">almost</span> any app!
       </h2>
       <ul>
-        <li className="flex gap-3 py-5 flex-wrap">
+        <li className="flex gap-3 py-5 flex-wrap dark:text-gray-300">
           <BaseButton
             text="saracc621@gmail.com"
             href="mailto:saracc621@gmail.com"

@@ -10,7 +10,7 @@ export function BaseButton({
   href: string;
 }) {
   return (
-    <button className="rounded-full border border-white/10 bg-white/5 px-3 py-1 hover:scale-110 hover:bg-white/10 transition text-xs sm:base">
+    <button className="rounded-full border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 px-3 py-1 hover:scale-110 hover:bg-black/10 dark:hover:bg-white/20 transition text-xs sm:base">
       <a
         href={href}
         target="_blank"
