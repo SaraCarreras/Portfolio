@@ -34,36 +34,39 @@ export function NavBar() {
 
   //sm:w-[740px]
   return (
-    <nav className="flex mx-auto sticky dark:bg-white/60 w-fit top-0 z-10 border rounded-full border-black bg-purple-400/10 backdrop-blur-2xl ">
+    <nav className="flex mx-auto sticky dark:bg-white/40 w-fit top-0 z-10 border rounded-full border-black bg-purple-400/10 backdrop-blur ">
       <ul className="flex flex-row items-center self-end font-bold sm:text-lg sm:gap-x-5 ">
-        <li>
-          <a className=" hover:text-purple-600 pl-5" href="#header">
+        <li className="hover:scale-110">
+          <a
+            className=" dark:hover:text-purple-900 hover:text-purple-800 pl-5"
+            href="#header"
+          >
             Header
           </a>
         </li>
-        <li>
-          <a className=" hover:text-purple-600 px-2" href="#experience">
+        <li className="hover:scale-110">
+          <a className=" hover:text-purple-900 px-2" href="#experience">
             Experience
           </a>
         </li>
-        <li>
-          <a className=" hover:text-purple-600 px-2" href="#about">
+        <li className="hover:scale-110">
+          <a className=" hover:text-purple-900 px-2" href="#about">
             About
           </a>
         </li>
-        <li>
-          <a className=" hover:text-purple-600 px-2" href="#projects">
+        <li className="hover:scale-110">
+          <a className=" hover:text-purple-900 px-2" href="#projects">
             Projects
           </a>
         </li>
-        <li>
-          <a className=" hover:text-purple-600 px-2" href="#contact">
+        <li className="hover:scale-110">
+          <a className=" hover:text-purple-900 px-2" href="#contact">
             Contact
           </a>
         </li>
         <li>
           <button
-            className="mt-2  hover:text-purple-600 pr-4 "
+            className="mt-2  hover:text-purple-900 pr-4  hover:scale-110"
             onClick={handleChangeTheme}
           >
             {SvgComponente}
