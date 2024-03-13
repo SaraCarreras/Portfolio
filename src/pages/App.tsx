@@ -3,9 +3,13 @@ import { Experience } from "@/components/ExperienceSection/ExperienceSection";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { NavBar } from "@/components/NavBar/NavBar";
-import { ProjectsSection } from "@/components/ProjectsSection/ProjectsSection";
 import "@/index.css";
-import "@fontsource/open-sans";
+import { lazy } from "react";
+const ProjectsSection = lazy(() =>
+  import("@/components/ProjectsSection/ProjectsSection").then(
+    ({ default: ProjectsSection }) => ({ default: ProjectsSection })
+  )
+);
 
 function App() {
   return (

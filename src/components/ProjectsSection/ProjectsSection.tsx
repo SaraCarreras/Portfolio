@@ -1,16 +1,16 @@
 import { SvgCode } from "@/icons/SvgCode";
 import { SectionContainer } from "@/components/SectionContainer";
 import { ProjectItem } from "./ProjectItem";
-import { PROJECTS_DATA } from "@/constants/ProjectsData";
+import { PROJECTS_DATA } from "@/components/ProjectsSection/ProjectsData";
 
-export function ProjectsSection() {
+const ProjectsSection = () => {
   return (
     <SectionContainer id="projects">
-      <h2 className="text-3xl font-semibold pb-8 flex gap-x-2 items-center">
+      <h2 className="text-3xl font-semibold flex gap-x-2 items-center">
         <SvgCode />
         Projects
       </h2>
-      <ol className="relative   ml-4">
+      <ol className="relative   ">
         {PROJECTS_DATA.map((project) => {
           return (
             <li key={project.preview}>
@@ -21,4 +21,5 @@ export function ProjectsSection() {
       </ol>
     </SectionContainer>
   );
-}
+};
+export default ProjectsSection;
