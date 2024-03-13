@@ -1,7 +1,7 @@
-import { EXPERIENCE_DATA } from "@/constants/ExperienceData";
 import { ExperienceItem } from "./ExperienceItem";
 import { SectionContainer } from "../SectionContainer";
 import { SvgExperience } from "@/icons/SvgExperience";
+import { EXPERIENCE_DATA } from "./ExperienceData";
 
 export function Experience() {
   return (
