@@ -1,7 +1,7 @@
 export function SvgCalendar() {
   return (
     <svg
-      className="w-2.5 h-2.5 text-purple-800 dark:text-purple-300"
+      className="w-3 h-3 text-purple-600 dark:text-white/80"
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"

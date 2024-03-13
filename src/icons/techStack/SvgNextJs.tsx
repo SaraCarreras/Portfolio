@@ -24,7 +24,7 @@ export function SvgNextJs() {
           r="87"
           fill="#000"
           stroke="#fff"
-          stroke-width="6"
+          strokeWidth="6"
         />
         <path
           d="M149.508 157.52 69.142 54H54v71.97h12.114V69.384l73.885 95.461a90.304 90.304 0 0 0 9.509-7.325Z"

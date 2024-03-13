@@ -72,13 +72,13 @@ export function SvgFirebase() {
         d="m0 282.998 2.123-2.972L102.527 89.512l.212-2.017L58.48 4.358C54.77-2.606 44.33-.845 43.114 6.951L0 282.998Z"
         fill="#FFC24A"
       />
-      <use fill="#FFA712" fill-rule="evenodd" />
+      <use fill="#FFA712" fillRule="evenodd" />
       <use filter="url(#a)" />
       <path
         d="m135.005 150.38 32.955-33.75-32.965-62.93c-3.129-5.957-11.866-5.975-14.962 0L102.42 87.287v2.86l32.584 60.233Z"
         fill="#F4BD62"
       />
-      <use fill="#FFA50E" fill-rule="evenodd" />
+      <use fill="#FFA50E" fillRule="evenodd" />
       <use filter="url(#b)" />
       <path
         fill="#F6820C"
