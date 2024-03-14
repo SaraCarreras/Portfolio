@@ -62,9 +62,3 @@ body {
     scroll-behavior: auto;
   }
 }
-
-@media (max-width: 640px) {
-  main {
-    margin: 0.5rem;
-  }
-}

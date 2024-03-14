@@ -3,8 +3,8 @@ export function SvgSass() {
     <svg
       viewBox="0 0 512 384"
       xmlns="http://www.w3.org/2000/svg"
-      width="50"
-      height="30"
+      width="40"
+      height="20"
     >
       <path
         fill="#CF649A"

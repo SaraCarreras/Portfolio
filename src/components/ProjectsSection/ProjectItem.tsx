@@ -11,7 +11,7 @@ export function ProjectItem({
   technology,
 }: iProjectItem) {
   return (
-    <article className="flex flex-col space-x-0 space-y-8 md:flex-row md:space-x-8 md:space-y-0">
+    <>
       <div className="flex items-center mx-auto w-full  md:w-1/2 md:items-start">
         <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:hover:-translate-y-1 md:hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
           <img
@@ -51,6 +51,6 @@ export function ProjectItem({
           </LinkButton>
         </span>
       </div>
-    </article>
+    </>
   );
 }

@@ -18,7 +18,7 @@ function App() {
       style={{ backgroundAttachment: "fixed" }}
     >
       <NavBar />
-      <main>
+      <main className="px-4 md:px-0">
         <Header />
         <Experience />
         <ProjectsSection />
