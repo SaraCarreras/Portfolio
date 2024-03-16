@@ -49,14 +49,15 @@ export function NavBar() {
             Experience
           </a>
         </li>
-        <li className="hover:scale-110">
-          <a className=" hover:text-purple-900 px-2" href="#about">
-            About
-          </a>
-        </li>
+
         <li className="hover:scale-110">
           <a className=" hover:text-purple-900 px-2" href="#projects">
             Projects
+          </a>
+        </li>
+        <li className="hover:scale-110">
+          <a className=" hover:text-purple-900 px-2" href="#about">
+            About
           </a>
         </li>
         <li>
