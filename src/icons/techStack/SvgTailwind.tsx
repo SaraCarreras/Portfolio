@@ -2,8 +2,8 @@ export function SvgTailwind() {
   return (
     <svg
       viewBox="0 0 256 154"
-      width="256"
-      height="154"
+      width="25"
+      height="20"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"
     >

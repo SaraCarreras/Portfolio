@@ -11,7 +11,7 @@ export interface iProjectItem {
   preview: string;
   github: string;
   image: string;
-  technology?: technologyTag[];
+  technology: technologyTag[];
 }
 
 export interface technologyTag {
