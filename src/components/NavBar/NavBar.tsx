@@ -59,11 +59,6 @@ export function NavBar() {
             Projects
           </a>
         </li>
-        <li className="hover:scale-110">
-          <a className=" hover:text-purple-900 px-2" href="#contact">
-            Contact
-          </a>
-        </li>
         <li>
           <button
             className="mt-2  hover:text-purple-900 pr-4  hover:scale-110"
