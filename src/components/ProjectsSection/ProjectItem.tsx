@@ -16,7 +16,7 @@ export function ProjectItem({
         <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:hover:-translate-y-1 md:hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
           <img
             alt="project's screenshot"
-            className="object-cover object-top max-w-xl w-full transition duration-500 sm:h-full md:scale-110 md:hover:scale-105"
+            className="object-cover object-top max-w-xl w-full transition duration-500 aspect-[4/3] sm:h-full md:scale-110 md:hover:scale-105"
             loading="lazy"
             src={image}
           />

@@ -1,6 +1,6 @@
 import { iProjectItem } from "@/types/types";
 import cornerFilms from "@/assets/cornerFilms.webp";
-import comingSoon from "@/assets/comingSoon.webp";
+import comingSoon from "@/assets/coming-soon.webp";
 import { SvgReact } from "@/icons/techStack/SvgReact";
 import { SvgRedux } from "@/icons/techStack/SvgRedux";
 import { SvgSass } from "@/icons/techStack/SvgSass";
@@ -72,11 +72,18 @@ export const PROJECTS_DATA: iProjectItem[] = [
   },
   {
     title: "FullStack Social Media app",
-    description: "description",
-    preview: "preview2",
-    github: "githubLink2",
+    description:
+      "A complete social app for sharing thoughts, following others and commenting. User search with pagination, activity pages for replies, profile management, and exclusive groups with top thoughts and members.",
+    preview: "#",
+    github: "#",
     image: `${comingSoon}`,
-    technology: [TAGS.NEXTJS, TAGS.MONGODB, TAGS.TYPESCRIPT, TAGS.TAILWIND],
+    technology: [
+      TAGS.NEXTJS,
+      TAGS.REACT,
+      TAGS.MONGODB,
+      TAGS.TYPESCRIPT,
+      TAGS.TAILWIND,
+    ],
   },
 ];
 //https://www.youtube.com/watch?v=O5cmLDVTgAs&t=12652s
