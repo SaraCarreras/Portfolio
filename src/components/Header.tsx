@@ -14,7 +14,7 @@ export function Header() {
         <img
           src={photoSara}
           alt="Sara's avatar"
-          className="rounded-full w-24 h-24 object-cover"
+          className="rounded-full w-24 h-24 object-cover shadow-2xl border border-black dark:shadow-slate-700 dark:shadow-lg"
         />
         <HeroButton href={cv}>Download Cv</HeroButton>
       </div>
