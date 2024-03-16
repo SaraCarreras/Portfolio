@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-  /* apply light */
   color-scheme: dark light;
 }
 
