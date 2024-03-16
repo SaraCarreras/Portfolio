@@ -1,10 +1,14 @@
 import { iProjectItem } from "@/types/types";
 import cornerFilms from "@/assets/cornerFilms.webp";
+import comingSoon from "@/assets/comingSoon.webp";
 import { SvgReact } from "@/icons/techStack/SvgReact";
 import { SvgRedux } from "@/icons/techStack/SvgRedux";
 import { SvgSass } from "@/icons/techStack/SvgSass";
 import { SvgTypeScript } from "@/icons/techStack/SvgTypeScript";
 import { SvgFirebase } from "@/icons/techStack/SvgFirebase";
+import { SvgNextJs } from "@/icons/techStack/SvgNextJs";
+import { SvgTailwind } from "@/icons/techStack/SvgTailwind";
+import { SvgMongoDB } from "@/icons/techStack/SvgMongoDB";
 
 const TAGS = {
   REACT: {
@@ -32,9 +36,22 @@ const TAGS = {
     class: "bg-[#f6820d41] text-[currentColor] ",
     icon: SvgFirebase,
   },
+  NEXTJS: {
+    name: "Next.js",
+    class: "bg-[#393939] text-white dark:text-[currentColor] ",
+    icon: SvgNextJs,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    class: "bg-[#1c94a77b] dark:text-[currentColor] ",
+    icon: SvgTailwind,
+  },
+  MONGODB: {
+    name: "MongoDB",
+    class: "bg-[#008d4298] dark:text-[currentColor] ",
+    icon: SvgMongoDB,
+  },
 };
-//#C46495
-//TODO: FALTA crear los wue están abajo comentados con la misma strategia la class cone l bg que yo decida cogiendolo de svgl
 
 export const PROJECTS_DATA: iProjectItem[] = [
   {
@@ -54,13 +71,12 @@ export const PROJECTS_DATA: iProjectItem[] = [
     ],
   },
   {
-    title: "Project 2",
+    title: "FullStack Social Media app",
     description: "description",
     preview: "preview2",
     github: "githubLink2",
-    image: "http://via.placeholder.com/300x200",
-    technology: [TAGS.REACT],
+    image: `${comingSoon}`,
+    technology: [TAGS.NEXTJS, TAGS.MONGODB, TAGS.TYPESCRIPT, TAGS.TAILWIND],
   },
 ];
-
-//"", "TypeScript", "", "Firebase"
+//https://www.youtube.com/watch?v=O5cmLDVTgAs&t=12652s
