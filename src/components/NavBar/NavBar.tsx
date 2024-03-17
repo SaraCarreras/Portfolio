@@ -11,7 +11,6 @@ export function NavBar() {
     }
     return "dark";
   });
-  console.log(themeMode, "thememode");
 
   const SvgModeMapper = {
     dark: <SvgDarkMode />,
