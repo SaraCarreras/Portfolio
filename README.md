@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio ⚙️
 
 Welcome to my portfolio! This project showcases my skills and projects created with the following technologies:
 
@@ -24,5 +24,5 @@ Feel free to reach out with any feedback or questions. Your input is highly appr
 
 ## Contact
 
-- [Portfolio](https://saracarreras.netlify.app)
-- [LinkedIn](https://www.linkedin.com/in/yourlinkedin](https://www.linkedin.com/in/saracarreras-frontend-developer/)
+- 👩🏻‍💻[Portfolio](https://saracarreras.netlify.app) 
+- 👥[LinkedIn](https://www.linkedin.com/in/saracarreras-frontend-developer) 
