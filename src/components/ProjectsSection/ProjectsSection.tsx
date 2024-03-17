@@ -16,7 +16,7 @@ const ProjectsSection = () => {
             return (
               <article
                 className="flex flex-col space-x-0 space-y-8 md:flex-row md:space-x-8 md:space-y-0"
-                key={project.preview}
+                key={project.title}
               >
                 <ProjectItem {...project} />
               </article>

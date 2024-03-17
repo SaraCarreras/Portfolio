@@ -74,9 +74,9 @@ export const PROJECTS_DATA: iProjectItem[] = [
     title: "FullStack Social Media app",
     description:
       "A complete social app for sharing thoughts, following others and commenting. User search with pagination, activity pages for replies, profile management, and exclusive groups with top thoughts and members.",
-    preview: "#",
-    github: "#",
+
     image: `${comingSoon}`,
+    isDisabledLink: true,
     technology: [
       TAGS.NEXTJS,
       TAGS.REACT,

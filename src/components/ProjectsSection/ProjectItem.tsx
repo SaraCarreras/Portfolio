@@ -9,6 +9,7 @@ export function ProjectItem({
   github,
   image,
   technology,
+  isDisabledLink,
 }: iProjectItem) {
   return (
     <>
@@ -43,10 +44,10 @@ export function ProjectItem({
         <p className="text-lg text-pretty">{description}</p>
 
         <span className="flex gap-3 mt-4 ">
-          <LinkButton href={preview}>
+          <LinkButton href={preview} disabled={isDisabledLink}>
             <SvgPreview /> View
           </LinkButton>
-          <LinkButton href={github}>
+          <LinkButton href={github} disabled={isDisabledLink}>
             <SvgGithub /> Github
           </LinkButton>
         </span>

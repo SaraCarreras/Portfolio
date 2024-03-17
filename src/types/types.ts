@@ -8,8 +8,9 @@ export interface iExperienceItem {
 export interface iProjectItem {
   title: string;
   description: string;
-  preview: string;
-  github: string;
+  preview?: string;
+  github?: string;
+  isDisabledLink?: boolean;
   image: string;
   technology: technologyTag[];
 }
