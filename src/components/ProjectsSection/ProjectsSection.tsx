@@ -1,5 +1,5 @@
 import { SvgCode } from "@/icons/SvgCode";
-import { SectionContainer } from "@/components/SectionContainer";
+import { SectionContainer } from "@/layouts/SectionContainer";
 import { ProjectItem } from "./ProjectItem";
 import { PROJECTS_DATA } from "@/components/ProjectsSection/ProjectsData";
 

@@ -2,9 +2,9 @@ import photoSara from "@/assets/photo-cv-optimized.webp";
 import { SvgGithub } from "@/icons/SvgGithub";
 import { SvgLinkedin } from "@/icons/SvgLinkedin";
 import { SvgEmail } from "@/icons/SvgEmail";
-import { BaseButton } from "./BaseButton";
-import { SectionContainer } from "./SectionContainer";
-import { HeroButton } from "./HeroButton";
+import { BaseButton } from "./shared/BaseButton";
+import { SectionContainer } from "../layouts/SectionContainer";
+import { HeroButton } from "./shared/HeroButton";
 import cv from "@/assets/Sara_Carreras_frontend_dev.pdf";
 
 export function Header() {

@@ -1,5 +1,5 @@
 import { iProjectItem } from "@/types/types";
-import { LinkButton } from "../LinkButton";
+import { LinkBadge } from "../shared/LinkBadge";
 import { SvgPreview } from "@/icons/SvgPreview";
 import { SvgGithub } from "@/icons/SvgGithub";
 export function ProjectItem({
@@ -44,12 +44,12 @@ export function ProjectItem({
         <p className="text-lg text-pretty">{description}</p>
 
         <span className="flex gap-3 mt-4 ">
-          <LinkButton href={preview} disabled={isDisabledLink}>
+          <LinkBadge href={preview} disabled={isDisabledLink}>
             <SvgPreview /> View
-          </LinkButton>
-          <LinkButton href={github} disabled={isDisabledLink}>
+          </LinkBadge>
+          <LinkBadge href={github} disabled={isDisabledLink}>
             <SvgGithub /> Github
-          </LinkButton>
+          </LinkBadge>
         </span>
       </div>
     </>

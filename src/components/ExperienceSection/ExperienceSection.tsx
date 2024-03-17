@@ -1,5 +1,5 @@
 import { ExperienceItem } from "./ExperienceItem";
-import { SectionContainer } from "../SectionContainer";
+import { SectionContainer } from "../../layouts/SectionContainer";
 import { SvgExperience } from "@/icons/SvgExperience";
 import { EXPERIENCE_DATA } from "./ExperienceData";
 

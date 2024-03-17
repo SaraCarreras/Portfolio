@@ -1,10 +1,10 @@
-import { LinkButtonProps } from "./LinkButton";
+import { LinkButtonProps } from "@/types/types";
 
 export function HeroButton({ children, href }: LinkButtonProps) {
   function handleClick() {
     const link = document.createElement("a");
     link.download = "Sara_Carreras_frontend_dev.pdf";
-    link.href = href;
+    link.href = href ? href : "";
     link.click();
   }
 

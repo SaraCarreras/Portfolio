@@ -1,5 +1,5 @@
 import { SvgAbout } from "@/icons/SvgAbout";
-import { SectionContainer } from "../SectionContainer";
+import { SectionContainer } from "../../layouts/SectionContainer";
 
 export function AboutSection() {
   return (

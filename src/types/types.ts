@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface iExperienceItem {
   company: string;
   date: string;
@@ -26,4 +28,10 @@ export type svgProp = {
     width: string;
     height: string;
   };
+};
+
+export type LinkButtonProps = {
+  href?: string;
+  children: ReactNode;
+  disabled?: boolean;
 };

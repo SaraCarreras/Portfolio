@@ -1,11 +1,6 @@
-import { ReactNode } from "react";
+import { LinkButtonProps } from "@/types/types";
 
-export type LinkButtonProps = {
-  href?: string;
-  children: ReactNode;
-  disabled?: boolean;
-};
-export function LinkButton({ children, href, disabled }: LinkButtonProps) {
+export function LinkBadge({ children, href, disabled }: LinkButtonProps) {
   const isDisabledLink = disabled
     ? "cursor-not-allowed bg-gray-400 pointer-events-none border-none"
     : "bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black hover:scale-110";
