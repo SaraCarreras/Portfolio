@@ -13,7 +13,7 @@ export function ExperienceItem({
         <SvgCalendar />
       </span>
       <div className="ml-3">
-        <h3 className="flex items-center gap-3 text-lg font-semibold text-purple-500 text-balance">
+        <h3 className="flex items-center gap-3 text-2xl font-semibold text-purple-500 text-balance">
           {company}
           {latest && (
             <span className="relative inline-flex h-7 overflow-hidden rounded-full dark:p-[1px] p-[1.5px] ml-8">
@@ -24,10 +24,10 @@ export function ExperienceItem({
             </span>
           )}
         </h3>
-        <time className="block my-4 text-md font-normal leading-none text-blue-500 text-pretty dark:text-white/70">
+        <time className="block my-5 text-lg font-normal leading-8 text-blue-500 text-pretty dark:text-white/70">
           {date}
         </time>
-        <p className="mb-4  text-lg text-gray-600 text-pretty dark:text-gray-300">
+        <p className="mb-4  text-xl text-gray-600 text-pretty dark:text-gray-300">
           {description}
         </p>
       </div>

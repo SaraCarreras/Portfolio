@@ -16,4 +16,3 @@ export function LinkBadge({ children, href, disabled }: LinkButtonProps) {
     </a>
   );
 }
-//DISABLE A BUTTON https://stackoverflow.com/questions/71320193/how-can-i-disable-the-button-in-design-as-well
