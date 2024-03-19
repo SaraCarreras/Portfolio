@@ -2,10 +2,11 @@ import { ExperienceItem } from "./ExperienceItem";
 import { SectionContainer } from "../../layouts/SectionContainer";
 import { SvgExperience } from "@/icons/SvgExperience";
 import { EXPERIENCE_DATA } from "./ExperienceData";
+import { forwardRef } from "react";
 
-export function Experience() {
+export const Experience = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <SectionContainer id="experience">
+    <SectionContainer ref={ref} id="experience">
       <h2 className="text-3xl font-semibold pb-8 flex gap-x-2 items-center">
         <SvgExperience />
         Experience
@@ -27,4 +28,4 @@ export function Experience() {
       </ol>
     </SectionContainer>
   );
-}
+});

@@ -1,9 +1,10 @@
 import { SvgAbout } from "@/icons/SvgAbout";
 import { SectionContainer } from "../../layouts/SectionContainer";
+import { forwardRef } from "react";
 
-export function AboutSection() {
+export const AboutSection = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <SectionContainer id="about">
+    <SectionContainer ref={ref} id="about">
       <h2 className="text-3xl font-semibold pb-8 flex gap-x-2 items-center">
         <SvgAbout />
         About me
@@ -37,4 +38,4 @@ export function AboutSection() {
       </article>
     </SectionContainer>
   );
-}
+});
