@@ -9,6 +9,9 @@ import { SvgFirebase } from "@/icons/techStack/SvgFirebase";
 import { SvgNextJs } from "@/icons/techStack/SvgNextJs";
 import { SvgTailwind } from "@/icons/techStack/SvgTailwind";
 import { SvgMongoDB } from "@/icons/techStack/SvgMongoDB";
+import { SvgNodeJs } from "@/icons/techStack/SvgNodeJs";
+import { SvgSQLite } from "@/icons/techStack/SvgSQLite";
+import { SvgSocketIo } from "@/icons/techStack/SvgSocketIo";
 
 const TAGS = {
   REACT: {
@@ -51,6 +54,21 @@ const TAGS = {
     class: "bg-[#008d4298] dark:text-[currentColor] ",
     icon: SvgMongoDB,
   },
+  NODEJS: {
+    name: "Node.js",
+    class: "bg-[#abff9a7d] dark:bg-[#6da68274] dark:text-[currentColor] ",
+    icon: SvgNodeJs,
+  },
+  SQLite: {
+    name: "SQLite",
+    class: "bg-[#023b572a] dark:bg-[#81939a] text-[currentColor] ",
+    icon: SvgSQLite,
+  },
+  SocketIo: {
+    name: "Socket.io",
+    class: "bg-[#34c7a77e] text-[currentColor] ",
+    icon: SvgSocketIo,
+  },
 };
 
 export const PROJECTS_DATA: iProjectItem[] = [
@@ -71,6 +89,22 @@ export const PROJECTS_DATA: iProjectItem[] = [
     ],
   },
   {
+    title: "Realtime Chat app",
+    description:
+      "You can log in and chat with others in real time! Built to explore the potential of SQL database and the versatility of Socket.io, the creation of a Node.js server and its integration with Socket.io.",
+
+    image: `${comingSoon}`,
+    isDisabledLink: true,
+    technology: [
+      TAGS.NODEJS,
+      TAGS.SQLite,
+      TAGS.SocketIo,
+      TAGS.REACT,
+      TAGS.TYPESCRIPT,
+      TAGS.TAILWIND,
+    ],
+  },
+  {
     title: "FullStack Social Media app",
     description:
       "A complete social app for sharing thoughts, following others and commenting. User search with pagination, activity pages for replies, profile management, and exclusive groups with top thoughts and members.",
@@ -86,4 +120,3 @@ export const PROJECTS_DATA: iProjectItem[] = [
     ],
   },
 ];
-//https://www.youtube.com/watch?v=O5cmLDVTgAs&t=12652s
