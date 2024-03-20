@@ -59,12 +59,12 @@ const TAGS = {
     class: "bg-[#abff9a7d] dark:bg-[#6da68274] dark:text-[currentColor] ",
     icon: SvgNodeJs,
   },
-  SQLite: {
+  SQLITE: {
     name: "SQLite",
     class: "bg-[#023b572a] dark:bg-[#81939a] text-[currentColor] ",
     icon: SvgSQLite,
   },
-  SocketIo: {
+  SOCKETI0: {
     name: "Socket.io",
     class: "bg-[#34c7a77e] text-[currentColor] ",
     icon: SvgSocketIo,
@@ -97,8 +97,8 @@ export const PROJECTS_DATA: iProjectItem[] = [
     isDisabledLink: true,
     technology: [
       TAGS.NODEJS,
-      TAGS.SQLite,
-      TAGS.SocketIo,
+      TAGS.SQLITE,
+      TAGS.SOCKETI0,
       TAGS.TYPESCRIPT,
       TAGS.TAILWIND,
     ],
