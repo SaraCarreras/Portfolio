@@ -99,7 +99,6 @@ export const PROJECTS_DATA: iProjectItem[] = [
       TAGS.NODEJS,
       TAGS.SQLite,
       TAGS.SocketIo,
-      TAGS.REACT,
       TAGS.TYPESCRIPT,
       TAGS.TAILWIND,
     ],
