@@ -13,7 +13,7 @@ import {
     ComponentMapper,
     SectionKey,
     SelectedComponentType,
-} from "./types/MoreInfoComponentType";
+} from "./types/MoreInfoComponentType";     
 
 export function MoreInfo() {
     const [selectedSection, setSelectedSection] =
