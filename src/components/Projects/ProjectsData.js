@@ -28,13 +28,13 @@ export const PROJECTS_DATA = [
   {
     src: stateImg,
     alt: "Another Project",
-    title: "Another Project",
+    title: "Another Project 3",
     description: "This is the Another Project description",
   },
   {
     src: stateImg,
     alt: "Another Project",
-    title: "Another Project",
+    title: "Another Project 4",
     description: "This is the Another Project description",
   },
 ];
